@@ -1,0 +1,36 @@
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Node
+node_modules/
+frontend/dist/
+*.tsbuildinfo
+
+# Data & models (large / licensed / potentially sensitive)
+data/raw/*
+!data/raw/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
+models/*
+!models/.gitkeep
+reports/*
+!reports/.gitkeep
+
+# OS / editors
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
