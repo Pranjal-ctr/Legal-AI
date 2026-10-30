@@ -24,6 +24,8 @@ data/raw/*
 !data/raw/.gitkeep
 data/processed/*
 !data/processed/.gitkeep
+# Judgment PDFs: provenance + sha256 are tracked in data/manifest.json instead (ADR 0002)
+data/family_law_dataset/
 models/*
 !models/.gitkeep
 reports/*

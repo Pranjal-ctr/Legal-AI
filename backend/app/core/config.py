@@ -1,5 +1,6 @@
 """Application settings, loaded from environment variables (prefix ``LEGALAI_``) and ``.env``."""
 
+from pathlib import Path
 from typing import Literal
 
 from pydantic import Field
@@ -30,6 +31,9 @@ class Settings(BaseSettings):
     cors_origins: list[str] = Field(
         default_factory=lambda: ["http://localhost:5173", "http://127.0.0.1:5173"]
     )
+
+    # Corpus root: raw/ (statutes), family_law_dataset/ (judgments), processed/ (ingest output).
+    data_dir: Path = Path("data")
 
     @property
     def is_production(self) -> bool:

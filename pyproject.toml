@@ -20,6 +20,10 @@ dev = [
     "ruff>=0.6",
     "mypy>=1.11",
 ]
+# Offline corpus ingestion (PDF text extraction). Install with `uv sync --extra ingest`.
+ingest = [
+    "pdfplumber>=0.11",
+]
 
 [build-system]
 requires = ["hatchling"]
@@ -44,6 +48,9 @@ select = ["E", "F", "I", "B", "UP", "SIM", "ASYNC", "S", "RUF"]
 
 [tool.ruff.lint.per-file-ignores]
 "tests/**" = ["S101"]
+# Parsers match the real Unicode dashes, quotes and spaces found in legal texts.
+"backend/app/ingestion/**" = ["RUF001"]
+"tests/unit/ingestion/**" = ["S101", "RUF001"]
 
 [tool.mypy]
 python_version = "3.11"

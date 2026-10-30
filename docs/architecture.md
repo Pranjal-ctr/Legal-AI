@@ -54,7 +54,7 @@ before embedding. Judgments: numbered paragraphs + headnote.
 |---|---|---|
 | 0 | System design | Done |
 | 1 | Skeleton: FastAPI `/api/v1/health`, React/Vite/Tailwind, config, logging, tests, CI | Done |
-| 2 | Ingestion (start with HMA 1955 + 20 gold queries) | — |
+| 2 | Ingestion: HMA 1955 + 48 judgments, 20 gold queries (ADR 0002) | Done |
 | 3 | Baseline RAG + minimal chat UI | — |
 | 4–15 | Hybrid retrieval, multilingual, understanding, agentic RAG, memory, ASR, TTS, UI, security, evaluation, deployment, research write-up | — |
 

@@ -1,0 +1,1044 @@
+{
+  "extractor": "pdfplumber-dedupe-1",
+  "origins": {
+    "statute": "Legislative Department text (High Court of Punjab & Haryana mirror)",
+    "supreme_court": "Digital Supreme Court Reports, digiscr.sci.gov.in",
+    "high_court": "eCourts judgments portal, judgments.ecourts.gov.in"
+  },
+  "documents": [
+    {
+      "doc_id": "hma1955",
+      "doc_type": "statute",
+      "court_level": "legislation",
+      "title": "The Hindu Marriage Act, 1955",
+      "court": null,
+      "citation": null,
+      "decision_date": null,
+      "topics": [],
+      "page_count": 13,
+      "sources": [
+        {
+          "path": "data/raw/hma1955.pdf",
+          "sha256": "11547fa08fde94f75db4f4602a8caeae7b1b52b222d1eeff772ff7912e3a295a",
+          "size_bytes": 536929,
+          "topic": null
+        }
+      ]
+    },
+    {
+      "doc_id": "hc-beff63d6ad",
+      "doc_type": "judgment",
+      "court_level": "high_court",
+      "title": "High Court of Bombay: WRIT PETITION NO. 14746 OF 2024",
+      "court": "High Court of Bombay",
+      "citation": null,
+      "decision_date": "2026-09-01",
+      "topics": [
+        "child_custody"
+      ],
+      "page_count": 46,
+      "sources": [
+        {
+          "path": "data/family_law_dataset/high court judgements/child_custody/0579e2e36dcf6d9d04e2f913c78e584ccefeb13c1983a05ea8ee9b32ecf8bdf81793370207.pdf",
+          "sha256": "beff63d6ad5f9474a8449b684da4ef25f6a5d6029f6c18b35190140bac46fa71",
+          "size_bytes": 214340,
+          "topic": "child_custody"
+        }
+      ]
+    },
+    {
+      "doc_id": "hc-3f07b78b6d",
+      "doc_type": "judgment",
+      "court_level": "high_court",
+      "title": "High Court of Chhattisgarh: CRMP No. 2617 of 2023",
+      "court": "High Court of Chhattisgarh",
+      "citation": "2026:CGHC:4360-DB",
+      "decision_date": "2026-01-27",
+      "topics": [
+        "child_custody"
+      ],
+      "page_count": 9,
+      "sources": [
+        {
+          "path": "data/family_law_dataset/high court judgements/child_custody/2ed7dfa2cc3e3cf1504d8205aac380dd5cd5d0de31098fa6c9dcadec12a642e81793370287.pdf",
+          "sha256": "3f07b78b6db07ed6e702ca70979f6d3abf20d712f88fd8cce857712c0a9e53af",
+          "size_bytes": 206628,
+          "topic": "child_custody"
+        }
+      ]
+    },
+    {
+      "doc_id": "hc-6d972dd783",
+      "doc_type": "judgment",
+      "court_level": "high_court",
+      "title": "High Court of Karnataka: WRIT PETITION (HABEAS CORPUS) NO.128 OF 2025",
+      "court": "High Court of Karnataka",
+      "citation": null,
+      "decision_date": "2026-06-30",
+      "topics": [
+        "child_custody"
+      ],
+      "page_count": 17,
+      "sources": [
+        {
+          "path": "data/family_law_dataset/high court judgements/child_custody/4969549bd340a6c5520119a6051877f402ab526ee1a6962648c07641e833bc6b1793370242.pdf",
+          "sha256": "6d972dd783f9f6b2dab964583f35fd75c809b9abd4df1d672fbb4642d7f235b9",
+          "size_bytes": 409678,
+          "topic": "child_custody"
+        }
+      ]
+    },
+    {
+      "doc_id": "hc-d4835ab15a",
+      "doc_type": "judgment",
+      "court_level": "high_court",
+      "title": "High Court of Gujarat: R/SPECIAL CRIMINAL APPLICATION (HABEAS CORPUS) NO. 12282 of 2026",
+      "court": "High Court of Gujarat",
+      "citation": null,
+      "decision_date": "2026-10-27",
+      "topics": [
+        "child_custody"
+      ],
+      "page_count": 12,
+      "sources": [
+        {
+          "path": "data/family_law_dataset/high court judgements/child_custody/774cbebff313d2a55e9456f5c7a4c0dd2f9d704c67ba9668f3531d97891972b31793370167.pdf",
+          "sha256": "d4835ab15ae412f913bcc7ca5ed9bbc5e461c9dc5fe9223c8727ba9aca4e4b83",
+          "size_bytes": 186514,
+          "topic": "child_custody"
+        }
+      ]
+    },
+    {
+      "doc_id": "hc-513cb053c2",
+      "doc_type": "judgment",
+      "court_level": "high_court",
+      "title": "High Court of Andhra Pradesh: WRIT PETITION NO: 14117/2026",
+      "court": "High Court of Andhra Pradesh",
+      "citation": null,
+      "decision_date": "2026-07-02",
+      "topics": [
+        "child_custody"
+      ],
+      "page_count": 9,
+      "sources": [
+        {
+          "path": "data/family_law_dataset/high court judgements/child_custody/a5beaf47fc4a606d04135f53bc4eadc19898635397cf8b21911fb970e039a31f1793370234.pdf",
+          "sha256": "513cb053c233c1655e0bd0e7ad76ab882c784593a5b9e59a2ce6a52cb3ef59c3",
+          "size_bytes": 509049,
+          "topic": "child_custody"
+        }
+      ]
+    },
+    {
+      "doc_id": "hc-c38dd90fe4",
+      "doc_type": "judgment",
+      "court_level": "high_court",
+      "title": "High Court of Karnataka: WRIT PETITION (HABEAS CORPUS) NO.138 OF 2025",
+      "court": "High Court of Karnataka",
+      "citation": null,
+      "decision_date": "2026-10-09",
+      "topics": [
+        "child_custody"
+      ],
+      "page_count": 24,
+      "sources": [
+        {
+          "path": "data/family_law_dataset/high court judgements/child_custody/c7ac9724e4d8eefa46131443c62df486f22e7eb7b093f0fa04157bb6e00f53df1793370188.pdf",
+          "sha256": "c38dd90fe49b9264db3a14e83f959dc4e1c2d64d1f74758ac2f314eec0dbae10",
+          "size_bytes": 434898,
+          "topic": "child_custody"
+        }
+      ]
+    },
+    {
+      "doc_id": "hc-72b60b8b3d",
+      "doc_type": "judgment",
+      "court_level": "high_court",
+      "title": "High Court of Punjab and Haryana: TA No.1188 of 2024",
+      "court": "High Court of Punjab and Haryana",
+      "citation": null,
+      "decision_date": "2026-07-21",
+      "topics": [
+        "divorce"
+      ],
+      "page_count": 3,
+      "sources": [
+        {
+          "path": "data/family_law_dataset/high court judgements/divorce/26694fe8a66c450605527edaef6c4ec4fd3500033c16b0df1bcd26c72d0953171793370561.pdf",
+          "sha256": "72b60b8b3da7afc52666fe8927ed805506a85491853a4e08941d6b88ab5d070e",
+          "size_bytes": 147675,
+          "topic": "divorce"
+        }
+      ]
+    },
+    {
+      "doc_id": "hc-fedc245e89",
+      "doc_type": "judgment",
+      "court_level": "high_court",
+      "title": "High Court of Karnataka: CRL.P No. 3328 of 2024",
+      "court": "High Court of Karnataka",
+      "citation": "2026:KHC:57008",
+      "decision_date": "2026-10-08",
+      "topics": [
+        "divorce"
+      ],
+      "page_count": 9,
+      "sources": [
+        {
+          "path": "data/family_law_dataset/high court judgements/divorce/4424886e1001f1ad4e901eac180f64171d3bc8fc86fbdd788facbfbdbd7d57a31793370673.pdf",
+          "sha256": "fedc245e8976107197b10d5312c9edea7f3f78c585e5b7cc56466e5aba27de70",
+          "size_bytes": 148654,
+          "topic": "divorce"
+        }
+      ]
+    },
+    {
+      "doc_id": "hc-9f26733729",
+      "doc_type": "judgment",
+      "court_level": "high_court",
+      "title": "High Court of Chhattisgarh: ACQA No. 179 of 2024",
+      "court": "High Court of Chhattisgarh",
+      "citation": "2026:CGHC:45420-DB",
+      "decision_date": "2026-10-28",
+      "topics": [
+        "divorce"
+      ],
+      "page_count": 16,
+      "sources": [
+        {
+          "path": "data/family_law_dataset/high court judgements/divorce/46f51f32bd2896f5f8b70fa9cc18bdc75e2cf292adf077dc220d298db77983e21793370388.pdf",
+          "sha256": "9f2673372944e99f1d848767ce5328eaa967b71068689047f1102740f42f40f9",
+          "size_bytes": 325205,
+          "topic": "divorce"
+        }
+      ]
+    },
+    {
+      "doc_id": "hc-19d3e4cee5",
+      "doc_type": "judgment",
+      "court_level": "high_court",
+      "title": "High Court of Punjab and Haryana (hc-19d3e4cee5)",
+      "court": "High Court of Punjab and Haryana",
+      "citation": null,
+      "decision_date": "2026-09-18",
+      "topics": [
+        "divorce"
+      ],
+      "page_count": 3,
+      "sources": [
+        {
+          "path": "data/family_law_dataset/high court judgements/divorce/47b04c81bc9f9cd77b32eebaaca67bdb58c0209a3bee272a51b51718534a87de1793370495.pdf",
+          "sha256": "19d3e4cee540a822dbb63b4881fbad14a2d17a00fb4b956b74c6dccc99541b01",
+          "size_bytes": 138228,
+          "topic": "divorce"
+        }
+      ]
+    },
+    {
+      "doc_id": "hc-0c2770b8d6",
+      "doc_type": "judgment",
+      "court_level": "high_court",
+      "title": "High Court of Madras: CMA(MD) No. 400 of 2024",
+      "court": "High Court of Madras",
+      "citation": null,
+      "decision_date": "2026-10-12",
+      "topics": [
+        "divorce"
+      ],
+      "page_count": 6,
+      "sources": [
+        {
+          "path": "data/family_law_dataset/high court judgements/divorce/4f547d9d0d926581b9a87fb5b838e9d202fb95450c90151ca5844189607ecf4b1793370607.pdf",
+          "sha256": "0c2770b8d6b3480323395e48a90b46a51307d8928a08f2b83c3240c57e07a735",
+          "size_bytes": 197868,
+          "topic": "divorce"
+        }
+      ]
+    },
+    {
+      "doc_id": "hc-ebac9cc496",
+      "doc_type": "judgment",
+      "court_level": "high_court",
+      "title": "High Court of Madras: Tr.C.M.P(MD)No.728 of 2025",
+      "court": "High Court of Madras",
+      "citation": null,
+      "decision_date": "2026-10-15",
+      "topics": [
+        "divorce"
+      ],
+      "page_count": 7,
+      "sources": [
+        {
+          "path": "data/family_law_dataset/high court judgements/divorce/52bb78b99d6e6406de4bc2f8add53e68ae89cbb87bf5dba5739dffefce8a64421793370462.pdf",
+          "sha256": "ebac9cc4969ca9a721f1008dfb14a1c468d5f2230900aaed80862797e14c4370",
+          "size_bytes": 233701,
+          "topic": "divorce"
+        }
+      ]
+    },
+    {
+      "doc_id": "hc-b2fc34ce84",
+      "doc_type": "judgment",
+      "court_level": "high_court",
+      "title": "High Court of Karnataka: CRL.P No. 6036 of 2020",
+      "court": "High Court of Karnataka",
+      "citation": "2026:KHC:57634",
+      "decision_date": "2026-10-13",
+      "topics": [
+        "divorce"
+      ],
+      "page_count": 7,
+      "sources": [
+        {
+          "path": "data/family_law_dataset/high court judgements/divorce/563b5997508f881d8573448903a5d9a985b3daafbd9a2c6f5589a9ac7a360f321793370653.pdf",
+          "sha256": "b2fc34ce841930d05430534ab95614b39507325ed0b7d4a263368044ce19dc2b",
+          "size_bytes": 127985,
+          "topic": "divorce"
+        }
+      ]
+    },
+    {
+      "doc_id": "hc-c39c8db553",
+      "doc_type": "judgment",
+      "court_level": "high_court",
+      "title": "High Court of Himachal Pradesh: Cr.Rev.(FC) No. 21 of 2024",
+      "court": "High Court of Himachal Pradesh",
+      "citation": "2025:HHC:20030",
+      "decision_date": "2026-10-27",
+      "topics": [
+        "divorce"
+      ],
+      "page_count": 11,
+      "sources": [
+        {
+          "path": "data/family_law_dataset/high court judgements/divorce/c4926aaf744c7e6e9c5e063f16891bdc915748bb4d2e32f1c39cc00a0b83bd991793370405.pdf",
+          "sha256": "c39c8db553bf566c77f2034e4047c0e37425b55b504040fcbe25b6449efd13ab",
+          "size_bytes": 99697,
+          "topic": "divorce"
+        }
+      ]
+    },
+    {
+      "doc_id": "hc-9c52919f36",
+      "doc_type": "judgment",
+      "court_level": "high_court",
+      "title": "High Court of Karnataka: CP No. 313 of 2026",
+      "court": "High Court of Karnataka",
+      "citation": "2026:KHC:58696",
+      "decision_date": "2026-10-16",
+      "topics": [
+        "divorce"
+      ],
+      "page_count": 4,
+      "sources": [
+        {
+          "path": "data/family_law_dataset/high court judgements/divorce/d5114f6099a23cbe37b3b9d67d7d9efd48f68fddcddbd6c3eb4bc57d075f6d031793370439.pdf",
+          "sha256": "9c52919f36a64161b05fc926c977ce5b9dedfe84dd3842db666f105cdc58ccea",
+          "size_bytes": 118873,
+          "topic": "divorce"
+        }
+      ]
+    },
+    {
+      "doc_id": "hc-811b360dff",
+      "doc_type": "judgment",
+      "court_level": "high_court",
+      "title": "High Court of Bombay: CRIMINAL APPLICATION NO. 227 OF 2023",
+      "court": "High Court of Bombay",
+      "citation": null,
+      "decision_date": null,
+      "topics": [
+        "divorce"
+      ],
+      "page_count": 9,
+      "sources": [
+        {
+          "path": "data/family_law_dataset/high court judgements/divorce/f27af28b3c7585c5641c17f5cde9d99651b3dd6058f32e99f85ffc30a87e84761793370422.pdf",
+          "sha256": "811b360dff8587ff887de94302a0f246ea7140a9b6f8edf1ca22f0e2291b0aad",
+          "size_bytes": 181825,
+          "topic": "divorce"
+        }
+      ]
+    },
+    {
+      "doc_id": "hc-3d928f4bed",
+      "doc_type": "judgment",
+      "court_level": "high_court",
+      "title": "High Court of Bombay: WRIT PETITION NO.2210 OF 2026",
+      "court": "High Court of Bombay",
+      "citation": null,
+      "decision_date": "2026-10-14",
+      "topics": [
+        "domestic_violence"
+      ],
+      "page_count": 7,
+      "sources": [
+        {
+          "path": "data/family_law_dataset/high court judgements/domestic_violence/35cf2ca011da4a196d96d8cd80006bdc37ba2b86eea4a67da3ef5adcb45a7b9d1793370834.pdf",
+          "sha256": "3d928f4bed97a768ad5fc5a4af3e454c023e8f2d02c4e4c2ee78e1dc46013bb9",
+          "size_bytes": 72024,
+          "topic": "domestic_violence"
+        }
+      ]
+    },
+    {
+      "doc_id": "hc-5263805504",
+      "doc_type": "judgment",
+      "court_level": "high_court",
+      "title": "High Court of Karnataka: CRL.RP No.649 of 2021",
+      "court": "High Court of Karnataka",
+      "citation": null,
+      "decision_date": "2026-10-09",
+      "topics": [
+        "domestic_violence"
+      ],
+      "page_count": 24,
+      "sources": [
+        {
+          "path": "data/family_law_dataset/high court judgements/domestic_violence/743982411fefe590449b5be3fe7e58c682b6e48bd220743f0fedb8c73414d1f01793370744.pdf",
+          "sha256": "52638055040ba2fdaeabc16f613abc2362b083432c4cf822b1e1445d36d58543",
+          "size_bytes": 212588,
+          "topic": "domestic_violence"
+        }
+      ]
+    },
+    {
+      "doc_id": "hc-172e68fc21",
+      "doc_type": "judgment",
+      "court_level": "high_court",
+      "title": "High Court of Patna: CRIMINAL MISCELLANEOUS No.71810 of 2026",
+      "court": "High Court of Patna",
+      "citation": null,
+      "decision_date": "2026-10-28",
+      "topics": [
+        "domestic_violence"
+      ],
+      "page_count": 3,
+      "sources": [
+        {
+          "path": "data/family_law_dataset/high court judgements/domestic_violence/84cac68201f556af63399a6663daa832c80d93df753d6a7509db7c82937619ca1793370770.pdf",
+          "sha256": "172e68fc2143c2733d6517ff3a91ff5160e820519295dec96cf634400c27094a",
+          "size_bytes": 76410,
+          "topic": "domestic_violence"
+        }
+      ]
+    },
+    {
+      "doc_id": "hc-e9da0995a7",
+      "doc_type": "judgment",
+      "court_level": "high_court",
+      "title": "High Court of Gujarat: ASIDE FIR/ORDER) NO. 33697 of 2016",
+      "court": "High Court of Gujarat",
+      "citation": null,
+      "decision_date": "2026-10-21",
+      "topics": [
+        "domestic_violence"
+      ],
+      "page_count": 39,
+      "sources": [
+        {
+          "path": "data/family_law_dataset/high court judgements/domestic_violence/d54c376f709fa1350dca5f560ebcabf4b6315073c217c41d1023b82b303d67b81793370814.pdf",
+          "sha256": "e9da0995a73e355d7a5b607a257e9929b32d013ddcc115ce5586281575282cb5",
+          "size_bytes": 243325,
+          "topic": "domestic_violence"
+        }
+      ]
+    },
+    {
+      "doc_id": "hc-39c2b7e3af",
+      "doc_type": "judgment",
+      "court_level": "high_court",
+      "title": "High Court of Delhi (hc-39c2b7e3af)",
+      "court": "High Court of Delhi",
+      "citation": null,
+      "decision_date": "2026-10-13",
+      "topics": [
+        "domestic_violence"
+      ],
+      "page_count": 10,
+      "sources": [
+        {
+          "path": "data/family_law_dataset/high court judgements/domestic_violence/d6aa6aadb1b3131163591e17d86f1da55a3739dff549c191ba0237329029dbb11793370852.pdf",
+          "sha256": "39c2b7e3afc19afb801132b6769cf361acc49ee2390e1c0cfdc8affa47883bdc",
+          "size_bytes": 806695,
+          "topic": "domestic_violence"
+        }
+      ]
+    },
+    {
+      "doc_id": "hc-654574d505",
+      "doc_type": "judgment",
+      "court_level": "high_court",
+      "title": "High Court of Karnataka: CRL.P No. 7018 of 2019",
+      "court": "High Court of Karnataka",
+      "citation": null,
+      "decision_date": "2026-10-17",
+      "topics": [
+        "domestic_violence"
+      ],
+      "page_count": 17,
+      "sources": [
+        {
+          "path": "data/family_law_dataset/high court judgements/domestic_violence/f72ea92f9c857888fe0259eb2e7889a097baf220b20f00552ba599a8e76985cf1793370729.pdf",
+          "sha256": "654574d505802db89298da485d280c23fc4d9ffe94794497d31e2d2493dfccde",
+          "size_bytes": 176713,
+          "topic": "domestic_violence"
+        }
+      ]
+    },
+    {
+      "doc_id": "hc-2d582184fd",
+      "doc_type": "judgment",
+      "court_level": "high_court",
+      "title": "High Court of Bombay: CRIMINAL REVISION APPLICATION NO. 143 OF 2025",
+      "court": "High Court of Bombay",
+      "citation": null,
+      "decision_date": "2026-02-09",
+      "topics": [
+        "maintenance"
+      ],
+      "page_count": 5,
+      "sources": [
+        {
+          "path": "data/family_law_dataset/high court judgements/maintainence/709ca626fe2ecac63d54359caefeee7571481ea82fb0b2599d049fc131e08d651793370995.pdf",
+          "sha256": "2d582184fdb875b0b8be39fe08abd7c5645d498ca607f88becdafc7c8949b05b",
+          "size_bytes": 34546,
+          "topic": "maintenance"
+        }
+      ]
+    },
+    {
+      "doc_id": "hc-86666d6ef8",
+      "doc_type": "judgment",
+      "court_level": "high_court",
+      "title": "High Court of Chhattisgarh: CRR No. 858 of 2023",
+      "court": "High Court of Chhattisgarh",
+      "citation": "2025:CGHC:39264",
+      "decision_date": "2025-08-06",
+      "topics": [
+        "maintenance"
+      ],
+      "page_count": 8,
+      "sources": [
+        {
+          "path": "data/family_law_dataset/high court judgements/maintainence/803aa4a39837930c6d50d4515fca525ccefdb88e33217a3461b4fa1c3623edcb1793370974.pdf",
+          "sha256": "86666d6ef8757dd1cc9a12bceb04ffab411734dc472cb4e467124d9f8930c509",
+          "size_bytes": 179671,
+          "topic": "maintenance"
+        }
+      ]
+    },
+    {
+      "doc_id": "hc-b71ceb127a",
+      "doc_type": "judgment",
+      "court_level": "high_court",
+      "title": "High Court of Punjab and Haryana: Transfer Application No.1230 of 2025",
+      "court": "High Court of Punjab and Haryana",
+      "citation": null,
+      "decision_date": "2026-05-15",
+      "topics": [
+        "maintenance"
+      ],
+      "page_count": 5,
+      "sources": [
+        {
+          "path": "data/family_law_dataset/high court judgements/maintainence/80c465d4a0c87a28815a08d36a3605ac38ac5dd79678297294b52170d7718d731793370949.pdf",
+          "sha256": "b71ceb127a6ffd181bbf18e5d951e61b9317a04b0c990dbf3d0bf42ddc87a059",
+          "size_bytes": 217680,
+          "topic": "maintenance"
+        }
+      ]
+    },
+    {
+      "doc_id": "hc-a67dc70696",
+      "doc_type": "judgment",
+      "court_level": "high_court",
+      "title": "High Court of Karnataka: WP No. 27223 of 2025",
+      "court": "High Court of Karnataka",
+      "citation": "2026:KHC:27471",
+      "decision_date": "2026-06-09",
+      "topics": [
+        "maintenance"
+      ],
+      "page_count": 7,
+      "sources": [
+        {
+          "path": "data/family_law_dataset/high court judgements/maintainence/ab738c5d63d7972b59c5f8398229b20bc6547efb2a629ddcc1f4bb7e8350ea5c1793370927.pdf",
+          "sha256": "a67dc706961bf89825ae5198ba48ec3fbe9bfb77905878f41203e2750a3c55e1",
+          "size_bytes": 126256,
+          "topic": "maintenance"
+        }
+      ]
+    },
+    {
+      "doc_id": "hc-f64bb3d4d6",
+      "doc_type": "judgment",
+      "court_level": "high_court",
+      "title": "High Court of Kerala: MAT.APPEAL NO. 194 OF 2023",
+      "court": "High Court of Kerala",
+      "citation": null,
+      "decision_date": "2023-12-05",
+      "topics": [
+        "maintenance"
+      ],
+      "page_count": 28,
+      "sources": [
+        {
+          "path": "data/family_law_dataset/high court judgements/maintainence/b12441c62652cb46c648804444b5de123ee4bf9f2baca2cf3db2596d9e2852891793371018.pdf",
+          "sha256": "f64bb3d4d6bcfc01ce5d1bed4ed74c61f073ef74bb3a94b9c584614e0290fb02",
+          "size_bytes": 118312,
+          "topic": "maintenance"
+        }
+      ]
+    },
+    {
+      "doc_id": "hc-12c896c85d",
+      "doc_type": "judgment",
+      "court_level": "high_court",
+      "title": "High Court of Karnataka: WP No. 9597 of 2024",
+      "court": "High Court of Karnataka",
+      "citation": "2025:KHC:19791",
+      "decision_date": "2025-06-10",
+      "topics": [
+        "maintenance"
+      ],
+      "page_count": 7,
+      "sources": [
+        {
+          "path": "data/family_law_dataset/high court judgements/maintainence/d9c750aa3c5be9a6675eec1b9d699eb233f22f6bd0d0826ce40bd7472af81f221793371037.pdf",
+          "sha256": "12c896c85d609f0cdb0d7cea550e105af0e49b74868ab1bfde74f68866687f41",
+          "size_bytes": 125468,
+          "topic": "maintenance"
+        }
+      ]
+    },
+    {
+      "doc_id": "hc-22f69caeb4",
+      "doc_type": "judgment",
+      "court_level": "high_court",
+      "title": "High Court of Punjab and Haryana: Transfer Application No.1515 of 2025",
+      "court": "High Court of Punjab and Haryana",
+      "citation": null,
+      "decision_date": "2026-05-21",
+      "topics": [
+        "maintenance"
+      ],
+      "page_count": 4,
+      "sources": [
+        {
+          "path": "data/family_law_dataset/high court judgements/maintainence/dba0001b3f09ec43b1b5d4dce79abfe50781de67144aff538083d533cff366321793370938.pdf",
+          "sha256": "22f69caeb41d789fdf395f2db17b965bebef646dfd7e17ba85f6c49d1a37d790",
+          "size_bytes": 201857,
+          "topic": "maintenance"
+        }
+      ]
+    },
+    {
+      "doc_id": "sc-4c917406b7",
+      "doc_type": "judgment",
+      "court_level": "supreme_court",
+      "title": "TEJASWINI GAUD AND ORS. v. SHEKHAR JAGDISH PRASAD TEWARI AND OTHERS",
+      "court": "Supreme Court of India",
+      "citation": "[2019] 7 S.C.R. 335",
+      "decision_date": "2019-05-06",
+      "topics": [
+        "child_custody"
+      ],
+      "page_count": 26,
+      "sources": [
+        {
+          "path": "data/family_law_dataset/supreme court judgements/child_custody/b0611af0064496f5a6febaea843e4f82d6c4fcb1279d8f800d152015a4efa31f1793036336.pdf",
+          "sha256": "4c917406b7c594b168e2140e50dc9d9d7682eedd58639d8c57893301c5aa30bd",
+          "size_bytes": 511780,
+          "topic": "child_custody"
+        }
+      ]
+    },
+    {
+      "doc_id": "sc-5628ed48b1",
+      "doc_type": "judgment",
+      "court_level": "supreme_court",
+      "title": "Komal Krishan Arora & Ors. v. Sandeep Kumar & Ors.",
+      "court": "Supreme Court of India",
+      "citation": "[2025] 9 S.C.R. 1085 : 2025 INSC 1123",
+      "decision_date": "2025-09-16",
+      "topics": [
+        "child_custody"
+      ],
+      "page_count": 25,
+      "sources": [
+        {
+          "path": "data/family_law_dataset/supreme court judgements/child_custody/b21169d0ddb8bbb6e5eb28f4695d437daa11f5ddd948f040330f236eab7da5511793036249.pdf",
+          "sha256": "5628ed48b1191f597c6742df568df06c7fcd995d3e5b2988692ef36446e4826b",
+          "size_bytes": 192496,
+          "topic": "child_custody"
+        }
+      ]
+    },
+    {
+      "doc_id": "sc-c572033345",
+      "doc_type": "judgment",
+      "court_level": "supreme_court",
+      "title": "Col. Ramneesh Pal Singh v. Sugandhi Aggarwal",
+      "court": "Supreme Court of India",
+      "citation": "[2024] 6 S.C.R. 259 : 2024 INSC 397",
+      "decision_date": "2024-05-08",
+      "topics": [
+        "child_custody"
+      ],
+      "page_count": 21,
+      "sources": [
+        {
+          "path": "data/family_law_dataset/supreme court judgements/child_custody/bd5da9378a1e6f99f02b88bba9c5e2a4c8fba1b1f5e3b1d74d8ddfe643851cba1793036325.pdf",
+          "sha256": "c572033345eedeb54ad8753140908485f77094f6d1e4be763f9e29a62f7385fb",
+          "size_bytes": 202452,
+          "topic": "child_custody"
+        }
+      ]
+    },
+    {
+      "doc_id": "sc-8a93445732",
+      "doc_type": "judgment",
+      "court_level": "supreme_court",
+      "title": "Somprabha Rana & Ors. v. The State of Madhya Pradesh & Ors.",
+      "court": "Supreme Court of India",
+      "citation": "[2024] 9 S.C.R. 64 : 2024 INSC 664",
+      "decision_date": "2024-09-06",
+      "topics": [
+        "child_custody"
+      ],
+      "page_count": 11,
+      "sources": [
+        {
+          "path": "data/family_law_dataset/supreme court judgements/child_custody/c6e4462dda6ba6f366e34c82ad924fcee76c628ec3bb2c1cf8a748ed182c8eb51793036361.pdf",
+          "sha256": "8a934457322a39f247229a94650c9f9c129102a52acaf1a22e8aa78d69400fb9",
+          "size_bytes": 135043,
+          "topic": "child_custody"
+        }
+      ]
+    },
+    {
+      "doc_id": "sc-a5ac7f86e8",
+      "doc_type": "judgment",
+      "court_level": "supreme_court",
+      "title": "YASHITA SAHU v. STATE OF RAJASTHAN & ORS.",
+      "court": "Supreme Court of India",
+      "citation": "[2020] 1 S.C.R. 417",
+      "decision_date": "2020-01-20",
+      "topics": [
+        "child_custody"
+      ],
+      "page_count": 24,
+      "sources": [
+        {
+          "path": "data/family_law_dataset/supreme court judgements/child_custody/dfcf7e9c2e702c5ba8eb95eb3db0e1fd39b7381d835576f5f105261dd590faef1793036282.pdf",
+          "sha256": "a5ac7f86e86ae21e84eafac877fe31e90cd0395374ef9b44edb93260c446509f",
+          "size_bytes": 472680,
+          "topic": "child_custody"
+        }
+      ]
+    },
+    {
+      "doc_id": "sc-69f68220a3",
+      "doc_type": "judgment",
+      "court_level": "supreme_court",
+      "title": "Sakshi Sharma v. Aman Sinha",
+      "court": "Supreme Court of India",
+      "citation": "[2026] 9 S.C.R. 542 : 2026 INSC 960",
+      "decision_date": "2026-09-03",
+      "topics": [
+        "divorce"
+      ],
+      "page_count": 7,
+      "sources": [
+        {
+          "path": "data/family_law_dataset/supreme court judgements/divorce/0c62a8f5fdbe8b3c2de229a26485b00984d21d1534f32e119985a89eeb5ff9e31793033538.pdf",
+          "sha256": "69f68220a3781b13fd0e3c5daba16a8efaf2f6a79d9600ebc06d23bebf81a5be",
+          "size_bytes": 109554,
+          "topic": "divorce"
+        }
+      ]
+    },
+    {
+      "doc_id": "sc-cab20e38e3",
+      "doc_type": "judgment",
+      "court_level": "supreme_court",
+      "title": "Sonia Virk v. Rohit Watts",
+      "court": "Supreme Court of India",
+      "citation": "[2025] 12 S.C.R. 611 : 2025 INSC 1390",
+      "decision_date": "2025-12-05",
+      "topics": [
+        "divorce"
+      ],
+      "page_count": 6,
+      "sources": [
+        {
+          "path": "data/family_law_dataset/supreme court judgements/divorce/1809d99e9bfdba825e2fbe0dd2e470a4fef5da8d46df04f9964271282159642b1793033687.pdf",
+          "sha256": "cab20e38e3526434a68c7a39008fdcc0908f6eee60030fc37c668d829369c759",
+          "size_bytes": 86751,
+          "topic": "divorce"
+        }
+      ]
+    },
+    {
+      "doc_id": "sc-6ba14e08ce",
+      "doc_type": "judgment",
+      "court_level": "supreme_court",
+      "title": "Baksish Ahmad v. Union of India & Anr.",
+      "court": "Supreme Court of India",
+      "citation": "[2026] 7 S.C.R. 220 : 2026 INSC 630",
+      "decision_date": "2026-06-09",
+      "topics": [
+        "divorce"
+      ],
+      "page_count": 20,
+      "sources": [
+        {
+          "path": "data/family_law_dataset/supreme court judgements/divorce/37ad52e39e2ea53528140407f8764cc0b974ba94499b5cbb6c54adf1e79baf5e1793033563.pdf",
+          "sha256": "6ba14e08ce8792a88e61ce11a15d20a29f49be6f46b5eadff9985a543dfe263b",
+          "size_bytes": 233493,
+          "topic": "divorce"
+        }
+      ]
+    },
+    {
+      "doc_id": "sc-06be23847f",
+      "doc_type": "judgment",
+      "court_level": "supreme_court",
+      "title": "Dhananjay Rathi v. Ruchika Rathi",
+      "court": "Supreme Court of India",
+      "citation": "[2026] 5 S.C.R. 175 : 2026 INSC 360",
+      "decision_date": "2026-04-13",
+      "topics": [
+        "divorce",
+        "domestic_violence"
+      ],
+      "page_count": 35,
+      "sources": [
+        {
+          "path": "data/family_law_dataset/supreme court judgements/divorce/475f02243cd767c89c5748ca88b3b4f65cecdb177d9b0a2a475d973ca71a8b7c1793033585.pdf",
+          "sha256": "06be23847f10596132d7dbeee31433c2e0ad58c8344cd7e1381dfec407ccf717",
+          "size_bytes": 263790,
+          "topic": "divorce"
+        },
+        {
+          "path": "data/family_law_dataset/supreme court judgements/domestic_violence/b3c6b25c9fb5f9afaed5e2c606ce339edf6855a0b3733d705517d8ef1c7521e41793036605.pdf",
+          "sha256": "06be23847f10596132d7dbeee31433c2e0ad58c8344cd7e1381dfec407ccf717",
+          "size_bytes": 263790,
+          "topic": "domestic_violence"
+        }
+      ]
+    },
+    {
+      "doc_id": "sc-a3d08438e0",
+      "doc_type": "judgment",
+      "court_level": "supreme_court",
+      "title": "Vikas Kanaujia v. Sarita",
+      "court": "Supreme Court of India",
+      "citation": "[2024] 7 S.C.R. 933 : 2024 INSC 517",
+      "decision_date": "2024-07-10",
+      "topics": [
+        "divorce"
+      ],
+      "page_count": 9,
+      "sources": [
+        {
+          "path": "data/family_law_dataset/supreme court judgements/divorce/6194d303927ec8de9cd98e3f583c5f4bc445f6c05e404152ab607466dd3bd2f71793033819.pdf",
+          "sha256": "a3d08438e0a96402aaf81e0f96eea8571712edb3b02566aee17cc204d561adfd",
+          "size_bytes": 103983,
+          "topic": "divorce"
+        }
+      ]
+    },
+    {
+      "doc_id": "sc-a682d1f87f",
+      "doc_type": "judgment",
+      "court_level": "supreme_court",
+      "title": "THE DIRECTOR OF TREASURIES IN KARNATAKA & ANR. v. V. SOMYASHREE",
+      "court": "Supreme Court of India",
+      "citation": "[2021] 7 S.C.R. 649",
+      "decision_date": "2021-09-13",
+      "topics": [
+        "divorce"
+      ],
+      "page_count": 11,
+      "sources": [
+        {
+          "path": "data/family_law_dataset/supreme court judgements/divorce/6bd8fda359ac74a44b09a2d0ee5cd6c960f8f96475331ce13e94e67b5680e8611793034066.pdf",
+          "sha256": "a682d1f87f1923c46c453ceb3ad3e3616d85e1527117dae0e68ab7745fe18146",
+          "size_bytes": 183616,
+          "topic": "divorce"
+        }
+      ]
+    },
+    {
+      "doc_id": "sc-017dc1ceb9",
+      "doc_type": "judgment",
+      "court_level": "supreme_court",
+      "title": "PRABHA TYAGI v. KAMLESH DEVI",
+      "court": "Supreme Court of India",
+      "citation": "[2022] 5 S.C.R. 970",
+      "decision_date": "2022-05-12",
+      "topics": [
+        "divorce"
+      ],
+      "page_count": 64,
+      "sources": [
+        {
+          "path": "data/family_law_dataset/supreme court judgements/divorce/c837e724b6f6738b55290b664f0ba67bea7324db258c0374a4adbe5916e910d71793034088.pdf",
+          "sha256": "017dc1ceb95434c4226dd1c712960e9b4a896133b20459721e88a99011f4fc51",
+          "size_bytes": 577737,
+          "topic": "divorce"
+        }
+      ]
+    },
+    {
+      "doc_id": "sc-5aa2626e51",
+      "doc_type": "judgment",
+      "court_level": "supreme_court",
+      "title": "Mrs. Shailja Krishna v. Satori Global Limited & Ors.",
+      "court": "Supreme Court of India",
+      "citation": "[2025] 9 S.C.R. 383 : 2025 INSC 1065",
+      "decision_date": "2025-09-02",
+      "topics": [
+        "domestic_violence"
+      ],
+      "page_count": 27,
+      "sources": [
+        {
+          "path": "data/family_law_dataset/supreme court judgements/domestic_violence/3c48b46a2f75dd6f1dd0115f481a4be50cf263b4a3f60a8c3d30f3e8c929b57a1793036584.pdf",
+          "sha256": "5aa2626e5189b0896c844878f516cba7fbde833a16ee711284dfba61e7ed7cfd",
+          "size_bytes": 268823,
+          "topic": "domestic_violence"
+        }
+      ]
+    },
+    {
+      "doc_id": "sc-2496489121",
+      "doc_type": "judgment",
+      "court_level": "supreme_court",
+      "title": "HARDEV SINGH v. HARPREET KAUR & ORS.",
+      "court": "Supreme Court of India",
+      "citation": "[2019] 14 S.C.R. 120",
+      "decision_date": "2019-11-07",
+      "topics": [
+        "domestic_violence"
+      ],
+      "page_count": 8,
+      "sources": [
+        {
+          "path": "data/family_law_dataset/supreme court judgements/domestic_violence/471a57cc3d8a8dd6dfb006a26461b1f0e43b1a923ebd853b28b5c1c59e7b24ed1793036663.pdf",
+          "sha256": "249648912134b5bcd0addc4ce02519149a985563dde34e2e46ee368775b29843",
+          "size_bytes": 155911,
+          "topic": "domestic_violence"
+        }
+      ]
+    },
+    {
+      "doc_id": "sc-f006f034f2",
+      "doc_type": "judgment",
+      "court_level": "supreme_court",
+      "title": "ADITI ALIAS MITHI v. JITESH SHARMA",
+      "court": "Supreme Court of India",
+      "citation": "[2023] 14 S.C.R. 247 : 2023 INSC 981",
+      "decision_date": "2023-11-06",
+      "topics": [
+        "domestic_violence"
+      ],
+      "page_count": 19,
+      "sources": [
+        {
+          "path": "data/family_law_dataset/supreme court judgements/domestic_violence/6a96fabcebd88434dbf0740ba8281d129dab1aaa39694b79a9ac30389ba1f9871793036638.pdf",
+          "sha256": "f006f034f280329c14fa9f37f9913891c6d83e5fa689951cde1e5ed5392d4d90",
+          "size_bytes": 305439,
+          "topic": "domestic_violence"
+        }
+      ]
+    },
+    {
+      "doc_id": "sc-e21a87e70b",
+      "doc_type": "judgment",
+      "court_level": "supreme_court",
+      "title": "Shankar v. State of Rajasthan",
+      "court": "Supreme Court of India",
+      "citation": "[2026] 4 S.C.R. 298 : 2026 INSC 315",
+      "decision_date": "2026-04-02",
+      "topics": [
+        "domestic_violence"
+      ],
+      "page_count": 15,
+      "sources": [
+        {
+          "path": "data/family_law_dataset/supreme court judgements/domestic_violence/89739eb8e6d758796a4f173b54711add5d79ad7023c37a875ae3a13e18a6d8ef1793036564.pdf",
+          "sha256": "e21a87e70b9240163c807bf9cfeffd4eac151a39d3132f443c053007fdc6d152",
+          "size_bytes": 169729,
+          "topic": "domestic_violence"
+        }
+      ]
+    },
+    {
+      "doc_id": "sc-4a6e297462",
+      "doc_type": "judgment",
+      "court_level": "supreme_court",
+      "title": "Ghanshyam Soni v. State (Govt. of NCT of Delhi) & Anr.",
+      "court": "Supreme Court of India",
+      "citation": "[2025] 7 S.C.R. 331 : 2025 INSC 803",
+      "decision_date": "2025-06-04",
+      "topics": [
+        "domestic_violence"
+      ],
+      "page_count": 15,
+      "sources": [
+        {
+          "path": "data/family_law_dataset/supreme court judgements/domestic_violence/e6732faeb156bd02255be8ba5bfe4eee16efb2545866fa30ddbc9b5ba2badc861793036616.pdf",
+          "sha256": "4a6e2974628193522ed20b6a46878b587094201d7629f25f42ccf151efd78090",
+          "size_bytes": 177806,
+          "topic": "domestic_violence"
+        }
+      ]
+    },
+    {
+      "doc_id": "sc-d44ed2d737",
+      "doc_type": "judgment",
+      "court_level": "supreme_court",
+      "title": "M/s Balaji Formalin Pvt. Ltd. & Anr. v. Union of India & Anr.",
+      "court": "Supreme Court of India",
+      "citation": "[2026] 10 S.C.R. 232 : 2026 INSC 1009",
+      "decision_date": "2026-09-18",
+      "topics": [
+        "maintenance"
+      ],
+      "page_count": 27,
+      "sources": [
+        {
+          "path": "data/family_law_dataset/supreme court judgements/maintainence/1cbd10d1575caef172f349e632b4b470310da333fe45167c590a0323e1a25c241793034141.pdf",
+          "sha256": "d44ed2d73798b3e79a81d345cf53b87b164e8149a8ce95f520c65d8105e111b7",
+          "size_bytes": 231874,
+          "topic": "maintenance"
+        }
+      ]
+    },
+    {
+      "doc_id": "sc-28b871b8b4",
+      "doc_type": "judgment",
+      "court_level": "supreme_court",
+      "title": "Sardari Lal v. Bishan Dass & Ors.",
+      "court": "Supreme Court of India",
+      "citation": "[2026] 8 S.C.R. 1 : 2026 INSC 669",
+      "decision_date": "2026-07-06",
+      "topics": [
+        "maintenance"
+      ],
+      "page_count": 47,
+      "sources": [
+        {
+          "path": "data/family_law_dataset/supreme court judgements/maintainence/491b5a8e8ff897b8cbfa05e2c35aa49488e10d9a6dfc39d0045b5fe654472c4d1793034176.pdf",
+          "sha256": "28b871b8b493c4fe5eb1195d5f59cf72413b1f7461f7be11e56c140a6f91af41",
+          "size_bytes": 315226,
+          "topic": "maintenance"
+        }
+      ]
+    }
+  ]
+}
