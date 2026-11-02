@@ -68,3 +68,20 @@ def test_documents_and_chunks_are_consistent() -> None:
         assert chunk["page_start"] <= chunk["page_end"]
     sc = [d for d in documents if d["court_level"] == "supreme_court"]
     assert all(d["citation"] and d["decision_date"] for d in sc)
+
+
+LAY_GOLD = GOLD.with_name("gold_queries_lay.jsonl")
+
+
+@needs_corpus
+def test_lay_gold_queries_resolve_to_chunks_containing_evidence() -> None:
+    """Plain-language phrasings (no statutory vocabulary) of statute questions (Phase 13)."""
+    chunks = {c["chunk_id"]: c for c in _load(CHUNKS)}
+    lay = _load(LAY_GOLD)
+    assert len({g["id"] for g in lay}) == len(lay) >= 5
+    for g in lay:
+        expected = g["expected_chunk_ids"]
+        assert isinstance(expected, list)
+        assert all(cid in chunks for cid in expected), g["id"]
+        text = " ".join(str(chunks[cid]["text"]) for cid in expected)
+        assert g["evidence"] in text, f"{g['id']}: evidence not found verbatim"

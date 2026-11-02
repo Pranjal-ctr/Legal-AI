@@ -1,0 +1,195 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="1050" viewBox="0 0 1280 1050" font-family="Segoe UI, Helvetica, Arial, sans-serif" role="img" aria-labelledby="t d">
+  <title id="t">Kanoon AI system architecture</title>
+  <desc id="d">Browser UI with voice input and playback talks to a FastAPI backend whose agentic orchestrator runs language detection, translation, query understanding, an applicability gate, hybrid retrieval with reranking, evidence assessment, grounded English generation, validation and answer translation, using a switchable LLM provider (Gemini API or local Ollama), local speech models, encrypted SQLite memory and a locally built retrieval index.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#475569"/>
+    </marker>
+    <style>
+      .h { font-size: 14px; font-weight: 700; fill: #0f172a; }
+      .sec { font-size: 13px; font-weight: 700; letter-spacing: .06em; fill: #334155; }
+      .t { font-size: 12.5px; fill: #334155; }
+      .m { font-size: 12px; fill: #64748b; }
+      .s { font-size: 13px; fill: #0f172a; }
+      .b { font-weight: 700; }
+      .pill { font-size: 10.5px; font-weight: 700; fill: #ffffff; }
+      .num { font-size: 12px; font-weight: 700; fill: #ffffff; }
+      .line { stroke: #475569; stroke-width: 1.6; fill: none; }
+    </style>
+  </defs>
+
+  <rect width="1280" height="1050" fill="#ffffff"/>
+
+  <!-- Title -->
+  <text x="40" y="38" font-size="22" font-weight="700" fill="#0f172a">Kanoon AI — system architecture</text>
+  <text x="40" y="60" class="m">Multilingual (English · हिन्दी · ಕನ್ನಡ) agentic RAG for Indian family-law information — text and hands-free voice. Information, not legal advice.</text>
+
+  <!-- ============ BROWSER ============ -->
+  <rect x="40" y="78" width="1200" height="152" rx="12" fill="#eef2ff" stroke="#6366f1" stroke-width="1.5"/>
+  <text x="60" y="102" class="sec">BROWSER · React 19 + TypeScript + Vite + Tailwind</text>
+
+  <rect x="60" y="116" width="270" height="98" rx="8" fill="#ffffff" stroke="#c7d2fe"/>
+  <text x="76" y="138" class="h">Chat UI</text>
+  <text x="76" y="158" class="t">en / hi / kn interface, examples</text>
+  <text x="76" y="176" class="t">numbered sources + answer trace</text>
+  <text x="76" y="194" class="t">clarification buttons, feedback</text>
+
+  <rect x="356" y="116" width="270" height="98" rx="8" fill="#ffffff" stroke="#c7d2fe"/>
+  <text x="372" y="138" class="h">Voice input (hands-free)</text>
+  <text x="372" y="158" class="t">MediaRecorder (webm / opus)</text>
+  <text x="372" y="176" class="t">Silero VAD v5 in WebAssembly</text>
+  <text x="372" y="194" class="t">auto-stop after a 1.5 s pause</text>
+
+  <rect x="652" y="116" width="270" height="98" rx="8" fill="#ffffff" stroke="#c7d2fe"/>
+  <text x="668" y="138" class="h">Answer playback</text>
+  <text x="668" y="158" class="t">voice question → answer read aloud</text>
+  <text x="668" y="176" class="t">sentence-pipelined /tts audio</text>
+  <text x="668" y="194" class="t">Listen / Stop, mic interrupts</text>
+
+  <rect x="948" y="116" width="270" height="98" rx="8" fill="#ffffff" stroke="#c7d2fe"/>
+  <text x="964" y="138" class="h">Session + status</text>
+  <text x="964" y="158" class="t">SSE live progress per step</text>
+  <text x="964" y="176" class="t">session id → follow-up questions</text>
+  <text x="964" y="194" class="t">readiness pill (polls /ready)</text>
+
+  <!-- HTTP band -->
+  <line x1="640" y1="232" x2="640" y2="286" class="line" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+  <rect x="236" y="246" width="808" height="26" rx="13" fill="#ffffff" stroke="#cbd5e1"/>
+  <text x="640" y="264" text-anchor="middle" class="t">same-origin HTTP /api/v1 · POST /chat/stream (SSE) · POST /asr · POST /tts · GET /ready · /sessions · /feedback</text>
+
+  <!-- ============ BACKEND ============ -->
+  <rect x="40" y="290" width="1200" height="562" rx="12" fill="#f8fafc" stroke="#334155" stroke-width="1.5"/>
+  <text x="60" y="314" class="sec">BACKEND · FastAPI (Python 3.12, uv) — one process serves the built UI and the API</text>
+
+  <rect x="60" y="326" width="1160" height="34" rx="8" fill="#fffbeb" stroke="#d97706"/>
+  <text x="76" y="348" class="t"><tspan class="b">Middleware</tspan>  request id · per-IP rate limits (chat 12/min, speech 40/min) · body-size limits · security headers + CSP · no question text in logs</text>
+
+  <!-- Left column: speech + memory -->
+  <rect x="60" y="378" width="250" height="122" rx="8" fill="#ecfeff" stroke="#0891b2"/>
+  <text x="76" y="400" class="h">ASR · faster-whisper</text>
+  <text x="76" y="420" class="t">large-v3-turbo, CPU int8</text>
+  <text x="76" y="438" class="t">detects en / hi / kn + decodes</text>
+  <text x="76" y="456" class="t">in one encoder pass; re-decodes</text>
+  <text x="76" y="474" class="t">when the language is ambiguous</text>
+  <text x="76" y="492" class="m">← POST /asr</text>
+
+  <rect x="60" y="514" width="250" height="100" rx="8" fill="#ecfeff" stroke="#0891b2"/>
+  <text x="76" y="536" class="h">TTS · MMS-TTS (VITS)</text>
+  <text x="76" y="556" class="t">hin / kan / eng voices on CPU</text>
+  <text x="76" y="574" class="t">citations + symbols cleaned</text>
+  <text x="76" y="592" class="t">into speakable sentences</text>
+  <text x="76" y="608" class="m">← POST /tts</text>
+
+  <rect x="60" y="628" width="250" height="112" rx="8" fill="#f1f5f9" stroke="#64748b"/>
+  <text x="76" y="650" class="h">Memory · SQLite</text>
+  <text x="76" y="670" class="t">Fernet-encrypted sessions</text>
+  <text x="76" y="688" class="t">history + clarified facts,</text>
+  <text x="76" y="706" class="t">feedback; 30-day expiry</text>
+  <text x="76" y="726" class="m">DELETE /sessions erases all</text>
+  <line x1="310" y1="684" x2="328" y2="684" class="line" marker-end="url(#arrow)"/>
+
+  <!-- Center: orchestrator -->
+  <rect x="330" y="378" width="560" height="446" rx="10" fill="#ffffff" stroke="#4f46e5" stroke-width="1.5"/>
+  <text x="346" y="401" class="h">Agentic orchestrator — deterministic state machine</text>
+
+  <g>
+    <rect x="346" y="414" width="528" height="36" rx="6" fill="#eef2ff" stroke="#c7d2fe"/>
+    <circle cx="366" cy="432" r="11" fill="#4f46e5"/><text x="366" y="436" text-anchor="middle" class="num">1</text>
+    <text x="386" y="436.5" class="s"><tspan class="b">Detect language</tspan> — script + Hinglish rules (en / hi / kn)</text>
+  </g>
+  <g>
+    <rect x="346" y="458" width="528" height="36" rx="6" fill="#eef2ff" stroke="#c7d2fe"/>
+    <circle cx="366" cy="476" r="11" fill="#4f46e5"/><text x="366" y="480" text-anchor="middle" class="num">2</text>
+    <text x="386" y="480.5" class="s"><tspan class="b">Translate question</tspan> → English (hi / kn only)</text>
+    <rect x="822" y="466" width="42" height="20" rx="10" fill="#7c3aed"/><text x="843" y="480" text-anchor="middle" class="pill">LLM</text>
+  </g>
+  <g>
+    <rect x="346" y="502" width="528" height="36" rx="6" fill="#eef2ff" stroke="#c7d2fe"/>
+    <circle cx="366" cy="520" r="11" fill="#4f46e5"/><text x="366" y="524" text-anchor="middle" class="num">3</text>
+    <text x="386" y="524.5" class="s"><tspan class="b">Understand</tspan> — topic, religion, marriage type, legal terms</text>
+    <rect x="822" y="510" width="42" height="20" rx="10" fill="#7c3aed"/><text x="843" y="524" text-anchor="middle" class="pill">LLM</text>
+  </g>
+  <g>
+    <rect x="346" y="546" width="528" height="36" rx="6" fill="#eef2ff" stroke="#c7d2fe"/>
+    <circle cx="366" cy="564" r="11" fill="#4f46e5"/><text x="366" y="568" text-anchor="middle" class="num">4</text>
+    <text x="386" y="568.5" class="s"><tspan class="b">Applicability gate</tspan> — which law applies? ask / warn / refuse</text>
+  </g>
+  <g>
+    <rect x="346" y="590" width="528" height="36" rx="6" fill="#ecfdf5" stroke="#a7f3d0"/>
+    <circle cx="366" cy="608" r="11" fill="#059669"/><text x="366" y="612" text-anchor="middle" class="num">5</text>
+    <text x="386" y="612.5" class="s"><tspan class="b">Retrieve</tspan> — dense + BM25 → RRF → cross-encoder rerank</text>
+  </g>
+  <g>
+    <rect x="346" y="634" width="528" height="36" rx="6" fill="#eef2ff" stroke="#c7d2fe"/>
+    <circle cx="366" cy="652" r="11" fill="#4f46e5"/><text x="366" y="656" text-anchor="middle" class="num">6</text>
+    <text x="386" y="656.5" class="s"><tspan class="b">Assess evidence</tspan> → search again if gaps (≤ 2 rounds)</text>
+    <rect x="822" y="642" width="42" height="20" rx="10" fill="#7c3aed"/><text x="843" y="656" text-anchor="middle" class="pill">LLM</text>
+  </g>
+  <path d="M346,652 C334,652 334,608 344,608" class="line" marker-end="url(#arrow)"/>
+  <g>
+    <rect x="346" y="678" width="528" height="36" rx="6" fill="#eef2ff" stroke="#c7d2fe"/>
+    <circle cx="366" cy="696" r="11" fill="#4f46e5"/><text x="366" y="700" text-anchor="middle" class="num">7</text>
+    <text x="386" y="700.5" class="s"><tspan class="b">Generate</tspan> English answer; every claim cites [n]</text>
+    <rect x="822" y="686" width="42" height="20" rx="10" fill="#7c3aed"/><text x="843" y="700" text-anchor="middle" class="pill">LLM</text>
+  </g>
+  <g>
+    <rect x="346" y="722" width="528" height="36" rx="6" fill="#fef2f2" stroke="#fecaca"/>
+    <circle cx="366" cy="740" r="11" fill="#dc2626"/><text x="366" y="744" text-anchor="middle" class="num">8</text>
+    <text x="386" y="744.5" class="s"><tspan class="b">Validate</tspan> — citations exist, quotes verbatim, else regenerate</text>
+  </g>
+  <g>
+    <rect x="346" y="766" width="528" height="36" rx="6" fill="#eef2ff" stroke="#c7d2fe"/>
+    <circle cx="366" cy="784" r="11" fill="#4f46e5"/><text x="366" y="788" text-anchor="middle" class="num">9</text>
+    <text x="386" y="788.5" class="s"><tspan class="b">Translate answer</tspan> → hi / kn, keep [n], restore quotes</text>
+    <rect x="822" y="774" width="42" height="20" rx="10" fill="#7c3aed"/><text x="843" y="788" text-anchor="middle" class="pill">LLM</text>
+  </g>
+  <text x="346" y="818" class="m">Streams each step to the browser over SSE · English source text stays canonical for citations</text>
+
+  <!-- Right column: providers -->
+  <rect x="910" y="378" width="310" height="166" rx="8" fill="#f5f3ff" stroke="#7c3aed"/>
+  <text x="926" y="400" class="h">LLM provider (switchable)</text>
+  <text x="926" y="422" class="t"><tspan class="b">Gemini API</tspan> · gemini-3.5-flash-lite</text>
+  <text x="926" y="440" class="m">fast (2–8 s per answer), free tier,</text>
+  <text x="926" y="456" class="m">text is sent to Google</text>
+  <text x="926" y="480" class="t"><tspan class="b">Ollama</tspan> · gemma4:e4b on local GPU</text>
+  <text x="926" y="498" class="m">private + offline, slower (10–20 s)</text>
+  <text x="926" y="526" class="m">LEGALAI_LLM_PROVIDER=gemini | ollama</text>
+  <line x1="890" y1="476" x2="908" y2="476" class="line" marker-end="url(#arrow)"/>
+
+  <rect x="910" y="560" width="310" height="180" rx="8" fill="#ecfdf5" stroke="#059669"/>
+  <text x="926" y="582" class="h">Retrieval index (local)</text>
+  <text x="926" y="604" class="t">bge-m3 embeddings → embedded Qdrant</text>
+  <text x="926" y="622" class="t">BM25 with Indic-aware tokenizer</text>
+  <text x="926" y="640" class="t">bge-reranker-v2-m3 cross-encoder</text>
+  <text x="926" y="664" class="t"><tspan class="b">Corpus</tspan> · Hindu Marriage Act, 1955</text>
+  <text x="926" y="682" class="t">+ 48 Supreme / High Court judgments</text>
+  <text x="926" y="700" class="t">49 documents → 1,491 chunks</text>
+  <text x="926" y="718" class="m">stable ids, e.g. hma1955:s13:ss1:cl(ia)</text>
+  <line x1="890" y1="608" x2="908" y2="608" class="line" marker-end="url(#arrow)"/>
+
+  <!-- ============ OFFLINE ============ -->
+  <rect x="40" y="882" width="1200" height="112" rx="12" fill="#ffffff" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="6 5"/>
+  <text x="60" y="906" class="sec">OFFLINE · build once with scripts/</text>
+
+  <rect x="60" y="918" width="250" height="62" rx="8" fill="#f8fafc" stroke="#cbd5e1"/>
+  <text x="76" y="940" class="h">Source PDFs</text>
+  <text x="76" y="960" class="t">HMA 1955 + 48 judgments</text>
+  <line x1="310" y1="949" x2="358" y2="949" class="line" marker-end="url(#arrow)"/>
+
+  <rect x="360" y="918" width="250" height="62" rx="8" fill="#f8fafc" stroke="#cbd5e1"/>
+  <text x="376" y="940" class="h">scripts.ingest</text>
+  <text x="376" y="960" class="t">pdfplumber → hierarchical chunks</text>
+  <line x1="610" y1="949" x2="658" y2="949" class="line" marker-end="url(#arrow)"/>
+
+  <rect x="660" y="918" width="250" height="62" rx="8" fill="#f8fafc" stroke="#cbd5e1"/>
+  <text x="676" y="940" class="h">scripts.build_index</text>
+  <text x="676" y="960" class="t">bge-m3 + BM25 → data/index</text>
+  <path d="M860,918 L860,868 L1065,868 L1065,742" class="line" stroke-dasharray="5 4" marker-end="url(#arrow)"/>
+
+  <rect x="960" y="918" width="260" height="62" rx="8" fill="#f8fafc" stroke="#cbd5e1"/>
+  <text x="976" y="940" class="h">Evaluation</text>
+  <text x="976" y="960" class="t">65 gold queries · eval_retrieval</text>
+  <text x="976" y="975" class="m">eval_e2e (citations, quotes, latency)</text>
+
+  <text x="40" y="1026" class="m">Grounding: answers are written in English from retrieved official text only, every claim cites a numbered source, quotes are checked word for word, and translation keeps the [n] markers.</text>
+</svg>

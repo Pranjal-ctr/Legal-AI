@@ -17,6 +17,7 @@ htmlcov/
 # Node
 node_modules/
 frontend/dist/
+frontend/public/vad/
 *.tsbuildinfo
 
 # Data & models (large / licensed / potentially sensitive)
@@ -26,6 +27,10 @@ data/processed/*
 !data/processed/.gitkeep
 # Judgment PDFs: provenance + sha256 are tracked in data/manifest.json instead (ADR 0002)
 data/family_law_dataset/
+# Vector index (rebuild with `python -m scripts.build_index`)
+data/index/
+# Conversation memory (encrypted SQLite + generated dev key)
+data/sessions/
 models/*
 !models/.gitkeep
 reports/*
@@ -36,3 +41,7 @@ reports/*
 Thumbs.db
 .vscode/
 .idea/
+
+# uv download cache kept on D: (C: is nearly full); see CLAUDE.md
+.uv-cache/
+.tmp/

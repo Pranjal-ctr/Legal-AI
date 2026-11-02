@@ -25,6 +25,7 @@ def test_environment_variables_override_defaults(monkeypatch: pytest.MonkeyPatch
     monkeypatch.setenv("LEGALAI_PORT", "9001")
     monkeypatch.setenv("LEGALAI_LOG_JSON", "true")
     monkeypatch.setenv("LEGALAI_CORS_ORIGINS", '["https://example.org"]')
+    monkeypatch.setenv("LEGALAI_SESSION_KEY", "Hj2bWq7mT1qkqfJ0Yt3fAqjA1pX0d0V1c9nYkzQfR3U=")
 
     settings = make_settings()
 

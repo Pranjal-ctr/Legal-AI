@@ -78,3 +78,14 @@ def test_docs_hidden_in_production(settings: Settings) -> None:
         assert client.get("/docs").status_code == 404
         assert client.get("/openapi.json").status_code == 404
         assert client.get("/api/v1/health").status_code == 200
+
+
+def test_ready_reports_on_demand_without_warmup(client: TestClient) -> None:
+    response = client.get("/api/v1/ready")
+
+    assert response.status_code == 200
+    assert response.json() == {
+        "answers": "on_demand",
+        "speech_input": "on_demand",
+        "speech_output": "on_demand",
+    }

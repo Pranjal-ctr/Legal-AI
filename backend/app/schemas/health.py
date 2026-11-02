@@ -12,3 +12,14 @@ class HealthResponse(BaseModel):
     version: str
     environment: Environment
     timestamp: datetime
+
+
+Readiness = Literal["loading", "ready", "unavailable", "disabled", "on_demand"]
+
+
+class ReadyResponse(BaseModel):
+    """What works right now. ``on_demand``: models load on first use (warm-up is off)."""
+
+    answers: Readiness
+    speech_input: Readiness
+    speech_output: Readiness

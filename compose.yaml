@@ -1,0 +1,40 @@
+# Kanoon AI with Ollama (Phase 14). See docs/deployment.md.
+#   1. cp .env.example .env and set LEGALAI_SESSION_KEY
+#   2. docker compose up -d ollama && docker compose exec ollama ollama pull gemma4:e4b
+#   3. docker compose run --rm app python -m scripts.ingest && docker compose run --rm app python -m scripts.build_index
+#   4. docker compose up -d   →  http://127.0.0.1:8000
+services:
+  ollama:
+    image: ollama/ollama:0.40.13  # same version as the reference machine; gemma4 needs a recent Ollama
+    volumes:
+      - ollama:/root/.ollama
+    environment:
+      OLLAMA_KEEP_ALIVE: 30m
+    # GPU (NVIDIA Container Toolkit). Remove this block to run on CPU (much slower answers).
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
+    restart: unless-stopped
+
+  app:
+    build: .
+    depends_on:
+      - ollama
+    env_file: .env
+    environment:
+      LEGALAI_OLLAMA_BASE_URL: http://ollama:11434
+      LEGALAI_ENVIRONMENT: production
+      LEGALAI_HOST: 0.0.0.0
+    volumes:
+      - ./data:/srv/data
+      - ./models:/srv/models
+    ports:
+      - "127.0.0.1:8000:8000"  # localhost only: there is no authentication (docs/security.md)
+    restart: unless-stopped
+
+volumes:
+  ollama:

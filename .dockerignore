@@ -1,0 +1,14 @@
+.git
+.venv
+.uv-cache
+.tmp
+.env
+**/__pycache__
+.mypy_cache
+.pytest_cache
+.ruff_cache
+data
+models
+reports
+frontend/node_modules
+frontend/dist
